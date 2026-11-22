@@ -1,0 +1,33 @@
+{
+  "experiment": "qwen-local-python-pairs-v1",
+  "model": "qwen3.8:27b",
+  "model_digest": "aaee06c39dcf2437cde036998d960e1fc1494b8191be7cc9657d01e509097813",
+  "pairs": 10,
+  "source": {
+    "evolve": [
+      "s-last",
+      "s-climb"
+    ]
+  },
+  "target": {
+    "evolve": [
+      "t-frequency",
+      "t-minima"
+    ],
+    "held_out": [
+      "h-mode",
+      "h-descent"
+    ]
+  },
+  "rounds_per_stage": 2,
+  "proposals_per_round": 2,
+  "development_attempts": 1,
+  "held_out_attempts": 5,
+  "seed_namespace": "SIM-local-paired-20261119-v1",
+  "temperature_solver": 0.65,
+  "temperature_optimizer": 0.8,
+  "initial_guide": "Read the specification and write a correct Python expression.",
+  "primary_outcome": "Mean of ten paired differences in final held-out pass@1, percentage points. A pass requires all verifier cases for that task. Include ties and losses.",
+  "comparison": "Two target branches share each independently evolved source guide. Only SIM inherits and updates structured problem, rationale, prediction and outcome memory. Both retain their own target feedback and ordinary edit history. The solver receives only its current guide and task.",
+  "scope": "Small independent conceptual replication. Fixed local Qwen model, newly written Python expression tasks, prompt-only editable harness, reduced rounds/candidates/evolve rollouts. No Terminal-Bench scores."
+}

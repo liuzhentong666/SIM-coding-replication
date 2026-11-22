@@ -1,0 +1,205 @@
+{
+  "per_pair": [
+    {
+      "pair": 1,
+      "trials_per_arm": 50,
+      "no_sim": 28,
+      "sim": 28,
+      "gain_points": 0.0
+    },
+    {
+      "pair": 2,
+      "trials_per_arm": 50,
+      "no_sim": 26,
+      "sim": 24,
+      "gain_points": -4.0
+    },
+    {
+      "pair": 3,
+      "trials_per_arm": 50,
+      "no_sim": 27,
+      "sim": 27,
+      "gain_points": 0.0
+    },
+    {
+      "pair": 4,
+      "trials_per_arm": 50,
+      "no_sim": 30,
+      "sim": 30,
+      "gain_points": 0.0
+    },
+    {
+      "pair": 5,
+      "trials_per_arm": 50,
+      "no_sim": 28,
+      "sim": 27,
+      "gain_points": -2.0
+    },
+    {
+      "pair": 6,
+      "trials_per_arm": 50,
+      "no_sim": 26,
+      "sim": 23,
+      "gain_points": -6.0
+    },
+    {
+      "pair": 7,
+      "trials_per_arm": 50,
+      "no_sim": 27,
+      "sim": 28,
+      "gain_points": 2.0
+    },
+    {
+      "pair": 8,
+      "trials_per_arm": 50,
+      "no_sim": 31,
+      "sim": 31,
+      "gain_points": 0.0
+    },
+    {
+      "pair": 9,
+      "trials_per_arm": 50,
+      "no_sim": 21,
+      "sim": 23,
+      "gain_points": 4.0
+    },
+    {
+      "pair": 10,
+      "trials_per_arm": 50,
+      "no_sim": 27,
+      "sim": 26,
+      "gain_points": -2.0
+    }
+  ],
+  "pairs": 10,
+  "wins": 2,
+  "ties": 4,
+  "losses": 4,
+  "mean_gain_points": -0.8,
+  "paired_t_95ci_points": [
+    -2.8456928469555924,
+    1.2456928469555926
+  ],
+  "exact_signed_rank_p": 0.53125,
+  "regrade": {
+    "rule": "isinstance(node, ast.Name) and node.id != \"_\" and node.id.startswith(\"_\")",
+    "grader_image": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+    "original_grader_sha256": "7ad705852d82a30518c3bcd02d29c2f804f2227e8754f9a9cbba3734ac53560a",
+    "revised_grader_sha256": "f9b10d406bde415f23f97d7d575770f20fd0940335585a73575d0a554a20abeb",
+    "replayed_original_trials": 1000,
+    "per_task": [
+      {
+        "task": "h-mode",
+        "trials_per_arm": 50,
+        "sim": 3,
+        "no_sim": 4,
+        "gained_passes": {
+          "sim": 0,
+          "no_sim": 0
+        }
+      },
+      {
+        "task": "h-descent",
+        "trials_per_arm": 50,
+        "sim": 0,
+        "no_sim": 2,
+        "gained_passes": {
+          "sim": 0,
+          "no_sim": 1
+        }
+      },
+      {
+        "task": "h-prefix",
+        "trials_per_arm": 50,
+        "sim": 34,
+        "no_sim": 34,
+        "gained_passes": {
+          "sim": 0,
+          "no_sim": 0
+        }
+      },
+      {
+        "task": "h-changes",
+        "trials_per_arm": 50,
+        "sim": 47,
+        "no_sim": 43,
+        "gained_passes": {
+          "sim": 0,
+          "no_sim": 0
+        }
+      },
+      {
+        "task": "h-nearest",
+        "trials_per_arm": 50,
+        "sim": 5,
+        "no_sim": 8,
+        "gained_passes": {
+          "sim": 0,
+          "no_sim": 0
+        }
+      },
+      {
+        "task": "h-window",
+        "trials_per_arm": 50,
+        "sim": 31,
+        "no_sim": 34,
+        "gained_passes": {
+          "sim": 0,
+          "no_sim": 0
+        }
+      },
+      {
+        "task": "h-evenruns",
+        "trials_per_arm": 50,
+        "sim": 3,
+        "no_sim": 2,
+        "gained_passes": {
+          "sim": 3,
+          "no_sim": 1
+        }
+      },
+      {
+        "task": "h-balance",
+        "trials_per_arm": 50,
+        "sim": 45,
+        "no_sim": 45,
+        "gained_passes": {
+          "sim": 3,
+          "no_sim": 6
+        }
+      },
+      {
+        "task": "h-single",
+        "trials_per_arm": 50,
+        "sim": 50,
+        "no_sim": 50,
+        "gained_passes": {
+          "sim": 0,
+          "no_sim": 0
+        }
+      },
+      {
+        "task": "h-separation",
+        "trials_per_arm": 50,
+        "sim": 49,
+        "no_sim": 49,
+        "gained_passes": {
+          "sim": 1,
+          "no_sim": 0
+        }
+      }
+    ],
+    "totals": {
+      "sim": {
+        "trials": 500,
+        "passed": 267,
+        "gained_passes": 7
+      },
+      "no_sim": {
+        "trials": 500,
+        "passed": 271,
+        "gained_passes": 8
+      }
+    }
+  }
+}

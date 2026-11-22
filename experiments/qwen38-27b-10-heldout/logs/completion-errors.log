@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "resume_run.py", line 30, in <module>
+    run_pairs.main()
+  File "run_pairs.py", line 223, in main
+    endpoints[arm] = stage(pair, arm, source["guide"], source["memory"] if arm=="sim" else [])
+  File "run_pairs.py", line 167, in stage
+    evaluations = [development(f"{round_id}/edit{j}", tasks, choice["guide"],
+  File "run_pairs.py", line 167, in <listcomp>
+    evaluations = [development(f"{round_id}/edit{j}", tasks, choice["guide"],
+  File "run_pairs.py", line 129, in development
+    return [solve(f"{prefix}/{task}", task, guide, seed(*seed_parts, task)) for task in tasks]
+  File "run_pairs.py", line 129, in <listcomp>
+    return [solve(f"{prefix}/{task}", task, guide, seed(*seed_parts, task)) for task in tasks]
+  File "run_pairs.py", line 125, in solve
+    return {"task": task, "program": program, **check_program(program, task)}
+  File "run_pairs.py", line 110, in check_program
+    return event("grade/" + digest([task, expression]), inputs, run)
+  File "run_pairs.py", line 55, in event
+    result = produce()
+  File "run_pairs.py", line 107, in run
+    raise RuntimeError("Grader infrastructure failure: " + proc.stderr[-1000:])
+RuntimeError: Grader infrastructure failure: 20 pc=0x7ff78d3e9d3e
+runtime.mallocgcSmallScanNoHeader(0xe0, 0x7ff78e0dffa0)
+	/usr/local/go/src/runtime/malloc.go:1378 +0x145 fp=0xdec7bff6b8 sp=0xdec7bff658 pc=0x7ff78d3ea605
+runtime.mallocgc(0xe0, 0x7ff78e0dffa0, 0x1)
+	/usr/local/go/src/runtime/malloc.go:1066 +0xa5 fp=0xdec7bff6e8 sp=0xdec7bff6b8 pc=0x7ff78d4475e5
+runtime.newobject(0xdec7bff748?)
+	/usr/local/go/src/runtime/malloc.go:1747 +0x25 fp=0xdec7bff710 sp=0xdec7bff6e8 pc=0x7ff78d3eb105
+internal/cpu.doinit()
+	/usr/local/go/src/internal/cpu/cpu_x86.go:52 +0x1e fp=0xdec7bff770 sp=0xdec7bff710 pc=0x7ff78d3d4f1e
+internal/cpu.Initialize({0x0, 0x0})
+	/usr/local/go/src/internal/cpu/cpu.go:168 +0x1d fp=0xdec7bff790 sp=0xdec7bff770 pc=0x7ff78d3d497d
+runtime.cpuinit(...)
+	/usr/local/go/src/runtime/proc.go:763
+runtime.schedinit()
+	/usr/local/go/src/runtime/proc.go:876 +0xe5 fp=0xdec7bff7e0 sp=0xdec7bff790 pc=0x7ff78d419125
+runtime.rt0_go()
+	/usr/local/go/src/runtime/asm_amd64.s:349 +0x13c fp=0xdec7bff7e8 sp=0xdec7bff7e0 pc=0x7ff78d44fd7c
+

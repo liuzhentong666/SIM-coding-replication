@@ -1,0 +1,11 @@
+failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+Traceback (most recent call last):
+  File "resume_run.py", line 30, in <module>
+    run_pairs.main()
+  File "run_pairs.py", line 207, in main
+    IMAGE = subprocess.check_output(["docker","image","inspect","python:3.12-slim",
+  File "subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'image', 'inspect', 'python:3.12-slim', '--format', '{{.Id}}']' returned non-zero exit status 1.

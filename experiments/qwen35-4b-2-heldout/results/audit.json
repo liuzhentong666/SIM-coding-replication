@@ -1,0 +1,92 @@
+{
+  "checked_source_runs": 10,
+  "checked_optimization_rounds": 60,
+  "checked_target_final_trials": 200,
+  "checked_start_trials": 100,
+  "regraded_trials": 300,
+  "mean_start_score": 0.0,
+  "summary": {
+    "per_pair": [
+      {
+        "pair": 1,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 2,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 3,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 4,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 5,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 6,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 7,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 8,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 9,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      },
+      {
+        "pair": 10,
+        "trials_per_arm": 10,
+        "no_sim": 0,
+        "sim": 0,
+        "gain_points": 0.0
+      }
+    ],
+    "pairs": 10,
+    "wins": 0,
+    "ties": 10,
+    "losses": 0,
+    "mean_gain_points": 0.0,
+    "paired_t_95ci_points": [
+      0.0,
+      0.0
+    ],
+    "exact_signed_rank_p": 1.0
+  }
+}
